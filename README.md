@@ -3,6 +3,7 @@
 ## Description
 
 This project would have you reverse engineer a game that is text based. 
+
 1. http://orteil.dashnet.org/cookieclicker/
 
 The above is an example.
