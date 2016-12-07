@@ -1,0 +1,17 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-style: cursive;
+}
+
+main {
+	display: flex;
+	flex-flow: row;
+}
+
+#round {
+	float: left;
+	width: 170px;
+}
