@@ -1,16 +1,18 @@
+// const cookieTotal = require('clicking')
 
+// setItem and getItem are referencing objects.
+//
 function save() {
-  localStorage.setItem(cookieTotal, JSON.stringify(cookieTotal));
-  localStorage.setItem(clickMultiplier, JSON.stringify(clickMultiplier));
+  localStorage.setItem("cookieTotal", JSON.stringify(cookieTotal));
+  localStorage.setItem("clickMultiplier", JSON.stringify(clickMultiplier));
 }
 
 function load() {
-    cookieTotal = localStorage.parse(localStorage.getItem(cookieTotal));
-    clickMultiplier = localStorage.parse(localStorage.getItem(clickMultiplier));
+    cookieTotal = JSON.parse(localStorage.getItem("cookieTotal"));
+    clickMultiplier = JSON.parse(localStorage.getItem("clickMultiplier"));
 
 }
 
-document.getElementById('#savegame').onclick = save();
 
-module.exports = {save}
-module.exports = {load}
+document.getElementById('savegame').onclick = save;
+document.addEventListener("DOMContentLoaded", load());

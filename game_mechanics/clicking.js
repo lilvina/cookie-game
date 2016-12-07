@@ -1,14 +1,25 @@
-const cookieTotal = 0
-const clickMultiplier = 1
+var cookieTotal = 0
+var clickMultiplier = 1
 //const counter = 0
 //on click, increase cookieTotal * clickMultiplier
-function cookieClick() = {
+function cookieClick() {
   cookieTotal += (1 * clickMultiplier);
   return cookieTotal
 }
 
-document.getElementById('#savecookie').onclick = cookieClick;
+function oven() {
+  if (cookieTotal < 300) {
+    return "There aren't enough cookies to purchase this now." + clickMultiplier
+  } else {
+    clickMultiplier += 1
+    return clickMultiplier
+  }
+}
+
+
+
+document.getElementById('savecookie').onclick = cookieClick;
 
 // use localStorage
-module.exports = {cookieTotal};
-module.exports = {clickMultiplier};
+// module.exports = {cookieTotal};
+// module.exports = {clickMultiplier};
