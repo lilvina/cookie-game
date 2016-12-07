@@ -1,13 +1,16 @@
 
-var save(savedVariable) {
-  localStorage.setItem(savedVariable, JSON.stringify(savedVariable))
-};
+function save() {
+  localStorage.setItem(cookieTotal, JSON.stringify(cookieTotal));
+  localStorage.setItem(clickMultiplier, JSON.stringify(clickMultiplier));
+}
 
-var load() {
+function load() {
     cookieTotal = localStorage.parse(localStorage.getItem(cookieTotal));
     clickMultiplier = localStorage.parse(localStorage.getItem(clickMultiplier));
 
 }
 
-save(cookieTotal);
-save(clickMultiplier);
+document.getElementById('#savegame').onclick = save();
+
+module.exports = {save}
+module.exports = {load}
