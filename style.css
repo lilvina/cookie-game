@@ -3,7 +3,8 @@
 }
 
 h1 {
-	font-style: cursive;
+	font-style: Arial;
+	color: purple;
 }
 
 main {
@@ -14,4 +15,12 @@ main {
 #round {
 	float: left;
 	width: 170px;
+}
+
+#item {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-style: solid;
+	border-color: blue;
 }
