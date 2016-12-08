@@ -2,14 +2,18 @@
 
 // setItem and getItem are referencing objects.
 //
+
 function save() {
   localStorage.setItem("cookieTotal", JSON.stringify(cookieTotal));
   localStorage.setItem("clickMultiplier", JSON.stringify(clickMultiplier));
 }
 
 function newGame() {
-  localStorage.setItem("cookieTotal", JSON.stringify(0));
-  localStorage.setItem("clickMultiplier", JSON.stringify(0));
+  localStorage.clear();
+  cookieTotal = 0
+  clickMultiplier = 1
+  localStorage.setItem("cookieTotal", JSON.stringify(cookieTotal));
+  localStorage.setItem("clickMultiplier", JSON.stringify(clickMultiplier));
 }
 
 function load() {

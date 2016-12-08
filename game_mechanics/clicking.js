@@ -10,15 +10,15 @@ window.onload = function() {
 
 function cookieClick() {
   cookieTotal += (1 * clickMultiplier);
-  document.getElementById("cookie_total").innerHTML = "Total Cookies: " + cookieTotal
+  document.getElementById("cookie_total").innerHTML = "Total Cookies: " + cookieTotal;
   return cookieTotal
 }
 
 function oven() {
-  if (cookieTotal < 300) {
+  if (cookieTotal < 30) {
     return clickMultiplier
   } else {
-    (cookieTotal - 300)
+    cookieTotal -= 30
     clickMultiplier += 1
     return clickMultiplier
   }
@@ -28,6 +28,7 @@ function grandmaPurchase() {
   if (cookieTotal < 300) {
     return grandmaTotal
   } else {
+    cookieTotal -= 300
     grandmaTotal += 1
     return grandmaTotal
   }
@@ -36,12 +37,14 @@ function grandmaPurchase() {
 function grandmas() {
   for (i = 0; i === grandmaTotal; i++) {
     cookieClick();
+    console.log(cookieTotal)
   }
 }
+window.setInterval(grandmas(), 1000 )
 document.getElementById('savecookie').onclick = cookieClick;
 document.getElementById('oven').onclick = oven;
 document.getElementById('grandma').onclick = grandmaPurchase;
-window.setInterval(grandmas(), 5000 )
+
 
 
 // use localStorage
