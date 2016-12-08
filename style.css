@@ -1,14 +1,15 @@
 * {
 	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-	background-color: pink;
+	background-color: white;
 }
 
 h1 {
-	font-style: Arial;
-	color: purple;
+	font-family: Verdana, Geneva, sans-serif;
+	color: black;
 }
 
 main {
@@ -39,6 +40,7 @@ main {
 	border-color: inherit;
 	border-style: solid;
 	border-width: 2px;
+	background-color: grey;
 }
 
 .pic {
@@ -48,11 +50,11 @@ main {
 }
 
 #savegame {
-	color: red;
-	background-color: yellow;
+	color: black;
+	background-color: white;
 }
 
 #newgame {
 	color: white;
-	background-color: purple;
+	background-color: grey;
 }
