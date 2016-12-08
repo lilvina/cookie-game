@@ -1,6 +1,7 @@
 var cookieTotal = 0
 var clickMultiplier = 1
 var grandmaTotal = 0
+
 //const counter = 0
 //on click, increase cookieTotal * clickMultiplier
 window.onload = function() {
@@ -17,7 +18,7 @@ function oven() {
   if (cookieTotal < 300) {
     return clickMultiplier
   } else {
-    cookieTotal - 300
+    (cookieTotal - 300)
     clickMultiplier += 1
     return clickMultiplier
   }
@@ -40,7 +41,7 @@ function grandmas() {
 document.getElementById('savecookie').onclick = cookieClick;
 document.getElementById('oven').onclick = oven;
 document.getElementById('grandma').onclick = grandmaPurchase;
-document.setInterval(grandmas(), 5000 )
+window.setInterval(grandmas(), 5000 )
 
 
 // use localStorage
