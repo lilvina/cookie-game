@@ -17,7 +17,7 @@ This is important because creating this game would allow you to focus mainly on 
 - [x] As a user, I can "buy" items that increase the counter rate.  
 - [x] As a user, I can see the amount of "currency" I have.  
 - [x] As a user, I can reload my game data.  
-- [ ] The game increases currency depending on an algorithm that calculates the rate.  
+- [x] The game increases currency depending on an algorithm that calculates the rate.  
 
 ## Modified Specs
 Need to have:
@@ -31,21 +31,24 @@ Need to have:
 	- [x] Need Graphic
 	- [x] Functionality: Increase click multiplier by X
 	- [x] On Click: Subtract 300 from cookieTotal
-	- [ ] Needs to show count
+	- [x] Needs to show count
 - Grandmas
 	- [x] Button
 	- [x] Needs Graphic
 	- [x] Functionality: Auto”clicks”
 	- [x] On Click: Subtract 300 from cookieTotal
-	- [ ] Needs to show count
+	- [x] Needs to show count
 - New Game button
-	- [ ] Sets the values of the buttons to 0
+	- [x] Sets the values of the buttons to 0 (except default 1 oven)
 - On Load
   - [x] Load existing data when loading the page
 
 ### Stretch Goals
 - [ ] Create more shop items with different functionalities
+	- [x] Bakery - doubles the amount of grandmas and ovens
 - [ ] Stylesheet emulates actual Cookie Clicker game
+- [x] Autosave
+- [x] New Game refreshes the page
 
 ### Required
 - [x] The artifact produced is properly licensed, preferably with the [MIT license](https://opensource.org/licenses/MIT).
