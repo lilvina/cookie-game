@@ -69,6 +69,18 @@ function grandmas() {
   }
 }
 
+function farmDiv(){
+  var newDiv = document.createElement("div");
+  var newContent = document.createTextNode("Farm node!!!");
+  newDiv.appendChild(newContent);
+  var currentDiv = document.getElementById("item");
+  document.body.insertBefore(newDiv, currentDiv);
+}
+
+if(bakeryTotal === 2){
+  farmDiv();
+}
+
 window.setInterval(grandmas, 1000 )
 document.getElementById('savecookie').onclick = cookieClick;
 document.getElementById('oven').onclick = oven;
