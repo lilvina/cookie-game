@@ -27,7 +27,8 @@ function load() {
 
 }
 
+window.setInterval(save, 1000)
 
-document.getElementById('savegame').onclick = save;
+// document.getElementById('savegame').onclick = save;
 document.getElementById('newgame').onclick = newGame;
 document.addEventListener("DOMContentLoaded", load());
