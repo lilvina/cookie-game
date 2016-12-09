@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title id="cookie_total2">0 Cookies</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -9,37 +9,55 @@
 
 <nav>
 	<button id="newgame" type="submit">New Game</button>
-	<button id="savegame" type="submit">Save Game</button>
+	<!-- <button id="savegame" type="submit">Save Game</button> -->
 </nav>
 
 
-<main>
+<main align="center">
 	<div>
+		<p>Click the cookie to make more cookies!</p>
 		<button id="savecookie"><img src="cookie_PNG13656.png" id="round"></button>
 		<p id="cookie_total">0 cookies</p>
 	</div>
-	<aside>
-		<section>
-			<p>Choose Your Item:</p>
-		</section>
-		<section id="item">
-			<p id="item1"></p>
-			<div class="box" style="height: 181px;">
-				<p>Grandma</p>
-				<p id="grandma_total">Total Grandmas:</p>
-				<p>Cost: 300 Cookies</p>
-				<button id="grandma"><img class="pic" src="./grandma.png"></button>
-			</div>
-			<div class="box" style="height: 181px;">
-				<p>Oven</p>
-				<p id="oven_total">Total Ovens:</p>
-				<p>Cost: 30 Cookies</p>
-				<button id="oven"><img class="pic" src="./oven.jpeg"></button>
-			</div>
-		</section>
+
+	<div id="item">
+		<p>Choose Your Item:</p>
+
+		<div class="box">
+			<button id="oven" class="items"><img class="pic" src="./oven.png"><br>Buy 1</button>
+			<p>
+				<b>Ovens</b><br>
+				Cost: 30 Cookies<br>
+				<em>Increases cookies per batch</em>
+			</p>
+			<p id="oven_total"> 0 </p>
+		</div>
+
+		<div class="box">
+			<button id="grandma" class="items"><img class="pic" src="./grandma.png"><br>Hire 1</button>
+			<p><b>Grandmas</b><br>
+				Cost: 300 Cookies<br>
+				<em>Makes cookies for you</em>
+			</p>
+			<p id="grandma_total"> 0 </p>
+		</div>
+
+		<div class="box">
+			<button id="bakery" class="items"><img class="pic" src="./bakery.png"><br>Buy 1</button>
+			<p>
+				<b>Bakeries</b><br>
+				Cost: 80,000 Cookies<br>
+				<em>Doubles production!</em>
+			</p>
+			<p id="bakery_total">0</p>
+		</div>
+
+	</div>
+
 		<section id="messages"></section>
-	</aside>
+</div>
 </main>
+
 
 
 <script src="main.js"></script>

@@ -1,14 +1,18 @@
 * {
 	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-	background-color: pink;
+	background-image: url(cookiebackgroundbottom.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	background-size: 300px;
 }
 
 h1 {
-	font-style: Arial;
-	color: purple;
+	font-family: Verdana, Geneva, sans-serif;
+	color: black;
 }
 
 main {
@@ -16,29 +20,52 @@ main {
 	flex-flow: row;
 }
 
+div {
+	padding: 10px;
+	position: relative;
+}
+
+nav {
+	padding-bottom: 20px;
+}
+
+p {
+	margin: 20px
+}
+
 #round {
 	float: left;
 	width: 170px;
+	padding: 10px;
+	align-items: center;
 }
 
 #item {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	border-style: solid;
-	border-color: blue;
+	border-color: #444444;
+}
+
+.items {
+	padding: 1px 10px 2px 10px;
+	align-items: center;
 }
 
 .box {
+	clear: both;
 	display: flex;
-	flex-flow: column;
+	flex-flow: row wrap;
 	align-items: center;
-	height: 150px;
+	/*height: 100px;*/
 	min-width: 100px;
 	margin: 1px;
 	border-color: inherit;
 	border-style: solid;
 	border-width: 2px;
+	background-color: grey;
+	padding: 5px;
 }
 
 .pic {
@@ -48,11 +75,16 @@ main {
 }
 
 #savegame {
-	color: red;
-	background-color: yellow;
+	color: black;
+	background-color: white;
 }
 
 #newgame {
 	color: white;
-	background-color: purple;
+	background-color: grey;
+}
+
+#savecookie {
+	align: center;
+	/*margin-left: 60px;*/
 }
