@@ -7,6 +7,7 @@ function save() {
   localStorage.setItem("cookieTotal", JSON.stringify(cookieTotal));
   localStorage.setItem("clickMultiplier", JSON.stringify(clickMultiplier));
   localStorage.setItem("grandmaTotal", JSON.stringify(grandmaTotal));
+  localStorage.setItem("bakeryTotal", JSON.stringify(bakeryTotal));
 }
 
 function newGame() {
@@ -14,9 +15,11 @@ function newGame() {
   cookieTotal = 0
   clickMultiplier = 1
   grandmaTotal = 0
+  bakeryTotal = 0
   localStorage.setItem("cookieTotal", JSON.stringify(cookieTotal));
   localStorage.setItem("clickMultiplier", JSON.stringify(clickMultiplier));
   localStorage.setItem("grandmaTotal", JSON.stringify(grandmaTotal));
+  localStorage.setItem("bakeryTotal", JSON.stringify(bakeryTotal));
   location.reload();
 }
 
@@ -24,6 +27,7 @@ function load() {
     cookieTotal = JSON.parse(localStorage.getItem("cookieTotal"));
     clickMultiplier = JSON.parse(localStorage.getItem("clickMultiplier"));
     grandmaTotal = JSON.parse(localStorage.getItem("grandmaTotal"));
+    bakeryTotal = JSON.parse(localStorage.getItem("bakeryTotal"));
 
 }
 
