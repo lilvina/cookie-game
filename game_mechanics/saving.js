@@ -24,27 +24,15 @@ function newGame() {
 }
 
 function load() {
-  if (localStorage.getItem("cookieTotal") === null) {
+  if (localStorage.getItem("cookieTotal") === null || localStorage.getItem("clickMultiplier") === null || localStorage.getItem("grandmaTotal") === null || localStorage.getItem("bakeryTotal") === null) {
     cookieTotal = 0
-  } else {
-    cookieTotal = JSON.parse(localStorage.getItem("cookieTotal"));
-  };
-
-  if (localStorage.getItem("clickMultiplier") === null) {
     clickMultiplier = 1
-  } else {
-    clickMultiplier = JSON.parse(localStorage.getItem("clickMultiplier"));
-  };
-
-  if (localStorage.getItem("grandmaTotal") === null) {
     grandmaTotal = 0
-  } else {
-    grandmaTotal = JSON.parse(localStorage.getItem("grandmaTotal"));
-  };
-
-  if (localStorage.getItem("bakeryTotal") === null) {
     bakeryTotal = 0
   } else {
+    cookieTotal = JSON.parse(localStorage.getItem("cookieTotal"));
+    clickMultiplier = JSON.parse(localStorage.getItem("clickMultiplier"));
+    grandmaTotal = JSON.parse(localStorage.getItem("grandmaTotal"));
     bakeryTotal = JSON.parse(localStorage.getItem("bakeryTotal"));
   };
 }
