@@ -74,7 +74,7 @@ function farmDiv(){
   var newContent = document.createTextNode("Farm node!!!");
   newDiv.appendChild(newContent);
   var currentDiv = document.getElementById("item");
-  document.body.insertBefore(newDiv, currentDiv);
+  document.body.insertAfter(newDiv, currentDiv);
 }
 
 if(bakeryTotal === 2){
