@@ -105,5 +105,9 @@ p.box {
 	background-image: url(cookiebackground_transparent.png);
 	background-repeat: no-repeat;
 	background-position: bottom left;
-	background-size: 300px; 
+	background-size: 300px;
+}
+
+.farm-div {
+	justify-content: center;
 }
