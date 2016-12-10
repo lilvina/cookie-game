@@ -44,18 +44,14 @@ Need to have:
   - [x] Load existing data when loading the page
 
 ### Stretch Goals
-- [ ] Create more shop items with different functionalities
+- [x] Create more shop items with different functionalities
 	- [x] Bakery - doubles the amount of grandmas and ovens
+	- [x] Cows - Purchased with Cookies
+	- [x] Milk - Feed cows cookies, count increases based on how many cows there are
 - [ ] Stylesheet emulates actual Cookie Clicker game
+	- (it looks pretty great though)
 - [x] Autosave
 - [x] New Game refreshes the page
 
 ### Required
 - [x] The artifact produced is properly licensed, preferably with the [MIT license](https://opensource.org/licenses/MIT).
-
----
-
-<!-- LICENSE -->
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-<br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
