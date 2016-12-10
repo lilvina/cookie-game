@@ -44,9 +44,12 @@ Need to have:
   - [x] Load existing data when loading the page
 
 ### Stretch Goals
-- [ ] Create more shop items with different functionalities
+- [x] Create more shop items with different functionalities
 	- [x] Bakery - doubles the amount of grandmas and ovens
+	- [x] Cows - Purchased with Cookies
+	- [x] Milk - Feed cows cookies, count increases based on how many cows there are
 - [ ] Stylesheet emulates actual Cookie Clicker game
+	- (it looks pretty great though)
 - [x] Autosave
 - [x] New Game refreshes the page
 
